@@ -1,0 +1,16 @@
+#footer {
+  background: $red-c;
+  padding: 54px 0 28px;
+  .footer__video {
+    iframe {
+      display: block;
+      margin: 0 auto;
+      @include parameters(640px, 360px);
+    }
+  }
+  .footer__logo {
+    display: block;
+    margin: 125px auto 0;
+    @include parameters(86px, 13px);
+  }
+}

@@ -1,0 +1,32 @@
+//Parameters
+@import "parameters/_base";
+@import "parameters/_fonts";
+
+//Plugins
+
+//Owl carousel
+@import "plugins/animate";
+@import "plugins/autoheight";
+@import "plugins/core";
+@import "plugins/lazyload";
+@import "plugins/theme.default";
+@import "plugins/theme.green";
+@import "plugins/theme";
+@import "plugins/video";
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
+@import "plugins/owl.theme.green";
+
+
+//Header
+@import "header/_header";
+
+//Content
+@import "content/_facts";
+@import "content/_main-slider";
+
+//Footer
+@import "footer/_footer";
+
+//Media
+@import "media";

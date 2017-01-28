@@ -1,0 +1,50 @@
+$mediaWidth1200: 1200px;
+$mediaWidth991: 991px;
+$mediaWidth700: 700px;
+$mediaWidth414: 414px;
+
+@media (max-width: #{$mediaWidth1200}) {
+  .main-slider {
+    .first-slider__main {
+      width: 95%;
+    }
+    .second-slider__main {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: #{$mediaWidth991}) {
+  .facts {
+    .facts__inform {
+      width: 95%
+    }
+    .facts__container {
+      width: 95%
+    }
+  }
+}
+
+@media (max-width: #{$mediaWidth700}) {
+  #header {
+    .header__bottom-b {
+      bottom: 100px;
+      padding-right: 6%;
+    }
+  }
+  #footer {
+    .footer__video {
+      iframe {
+        @include parameters(90%, 100%)
+      }
+    }
+  }
+}
+
+@media (max-width: #{$mediaWidth414}) {
+  #header {
+    .header__title {
+      font-size: 2.7em;
+    }
+  }
+}

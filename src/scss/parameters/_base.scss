@@ -1,0 +1,39 @@
+$red-c: #af1b15;
+$darkGrey-c: #4d4d4d;
+$darkGrey2-c: #383838;
+$lightgrey-c: #f0f0f0;
+
+@mixin clearfix {
+  &:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+@mixin parameters($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 400 14px sans-serif;
+  line-height: 1;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}

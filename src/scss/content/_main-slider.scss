@@ -1,0 +1,74 @@
+.main-slider {
+  background: $red-c;
+  padding: 37px 0 25px;
+  .first-slider__main {
+    position: relative;
+    max-width: 1166px;
+    margin: 0 auto;
+    .main-slider__content {
+      width: 88%;
+      margin: 0 auto;
+      &--text {
+        color: white;
+        text-align: center;
+        font: 400 18px 'PT Serif', serif;
+        margin-top: 30px;
+      }
+      &--picture {
+        width: 73%;
+        margin: 0 auto;
+      }
+    }
+  }
+  .second-slider__main {
+    position: relative;
+    max-width: 1166px;
+    margin: 0 auto;
+    .main-slider__content {
+      width: 88%;
+      margin: 0 auto;
+      &--text {
+        color: white;
+        text-align: center;
+        font: 400 18px 'PT Serif', serif;
+        margin-top: 30px;
+      }
+      &--picture {
+        width: 76%;
+        margin: 0 auto;
+        img {
+          width: 45%;
+          &:first-child {
+            float: left;
+          }
+          &:last-child {
+            float: right;
+          }
+        }
+        @include clearfix();
+      }
+    }
+  }
+  .owl-nav {
+    .owl-prev {
+      position: absolute;
+      left: 0;
+      top: 12px;
+      display: block;
+      background-image: url(../img/sprite.png);
+      background-position: 0px -13px;
+      @include parameters(12px, 20px);
+    }
+    .owl-next {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      display: block;
+      background-image: url(../img/sprite.png);
+      background-position: 0px -13px;
+      @include parameters(12px, 20px);
+      transform: rotate(180deg);
+    }
+  }
+  @include clearfix();
+}
